@@ -3,9 +3,10 @@
     "arrow-impossibility",
     "natural-monopoly",
     "path-dependence",
-    "confirmation-bias"
+    "confirmation-bias",
+    "loss-aversion"
   ],
-  "last_used_id": "confirmation-bias",
+  "last_used_id": "loss-aversion",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -37,6 +38,13 @@
       "concept_name": "确认偏误",
       "source": "llm",
       "file": "2026-09-30-16-确认偏误.md"
+    },
+    {
+      "time": "2026-09-30T22:55:01+08:00",
+      "concept_id": "loss-aversion",
+      "concept_name": "损失厌恶",
+      "source": "llm",
+      "file": "2026-09-30-22-损失厌恶.md"
     }
   ]
 }
