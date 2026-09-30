@@ -21,6 +21,43 @@
 - **8 种推送渠道**：Server酱、PushPlus、Bark、Telegram、企业微信、钉钉、飞书、SMTP 邮件，多渠道并行。
 - **全自动闭环**：GitHub Actions 定时触发 → 生成 → 推送 → 自动 commit 故事与状态回仓库。
 
+## 别人如何使用（新用户上手）
+
+本项目已设为 **GitHub 模板仓库**，欢迎自用与分发。三种方式任选其一：
+
+### 方式一：Use this template（推荐）
+
+1. 打开仓库首页，点击绿色按钮 **Use this template → Create a new repository**，为自己的仓库起个名字；
+2. 得到一个内容相同、提交历史独立的全新仓库；
+3. 按下方[五步部署](#五步部署)配置**你自己的** Secrets 并手动触发一次测试；
+4. 完成——定时任务、故事生成与推送都运行在你自己的仓库与渠道上，与本仓库数据完全隔离。
+
+### 方式二：Fork
+
+点右上角 **Fork**，之后同样配置 Secrets 并手动测试。两个注意点：
+
+> ⚠️ **Fork 的仓库定时任务默认是禁用的**：必须进 Actions 标签页手动点 **Enable scheduled workflows**，否则每天 9:00 / 22:00 的两个定时推送永远不会触发（手动 Run workflow 不受影响）。
+>
+> 好处是可以随时 **Sync fork** 同步本仓库的后续更新（例如新增概念、脚本修复）。
+
+### 方式三：Clone 到本地运行
+
+```bash
+git clone https://github.com/luo173176/civil-service-fable-push.git
+cd civil-service-fable-push
+pip install -r requirements.txt
+cp .env.example .env      # 填入你自己的 LLM key 与推送渠道密钥
+python scripts/main.py    # 手动运行一次
+```
+
+需要定时就在本机用任务计划（Windows）或 crontab（Linux/macOS）调用 `python scripts/main.py`。
+
+### 新用户需要准备什么
+
+- 任一家 OpenAI 兼容服务商的 API Key（服务商与 BASE_URL 对照表见下文[更换 LLM](#更换-llm)）；
+- 一个推送渠道的 token（Server酱 / PushPlus 均为微信扫码注册即得）；
+- **无需修改任何代码**——概念库、提示词、推送逻辑全部现成；想改推送时间、加概念、换模型见下文[自定义](#自定义)。
+
 ## 目录结构
 
 ```text
