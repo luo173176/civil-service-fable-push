@@ -1,8 +1,9 @@
 {
   "used_ids": [
-    "arrow-impossibility"
+    "arrow-impossibility",
+    "natural-monopoly"
   ],
-  "last_used_id": "arrow-impossibility",
+  "last_used_id": "natural-monopoly",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -13,6 +14,13 @@
       "concept_name": "阿罗不可能定理",
       "source": "pregenerated",
       "file": "2026-09-30-10-阿罗不可能定理.md"
+    },
+    {
+      "time": "2026-09-30T10:53:52+08:00",
+      "concept_id": "natural-monopoly",
+      "concept_name": "自然垄断",
+      "source": "llm",
+      "file": "2026-09-30-10-自然垄断.md"
     }
   ]
 }
