@@ -4,9 +4,10 @@
     "natural-monopoly",
     "path-dependence",
     "confirmation-bias",
-    "loss-aversion"
+    "loss-aversion",
+    "evidence-based-policy"
   ],
-  "last_used_id": "loss-aversion",
+  "last_used_id": "evidence-based-policy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -45,6 +46,13 @@
       "concept_name": "损失厌恶",
       "source": "llm",
       "file": "2026-09-30-22-损失厌恶.md"
+    },
+    {
+      "time": "2026-10-01T02:39:27+08:00",
+      "concept_id": "evidence-based-policy",
+      "concept_name": "循证决策",
+      "source": "llm",
+      "file": "2026-10-01-02-循证决策.md"
     }
   ]
 }
