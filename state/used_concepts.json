@@ -1,9 +1,10 @@
 {
   "used_ids": [
     "arrow-impossibility",
-    "natural-monopoly"
+    "natural-monopoly",
+    "path-dependence"
   ],
-  "last_used_id": "natural-monopoly",
+  "last_used_id": "path-dependence",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -21,6 +22,13 @@
       "concept_name": "自然垄断",
       "source": "llm",
       "file": "2026-09-30-10-自然垄断.md"
+    },
+    {
+      "time": "2026-09-30T15:55:22+08:00",
+      "concept_id": "path-dependence",
+      "concept_name": "路径依赖",
+      "source": "llm",
+      "file": "2026-09-30-15-路径依赖.md"
     }
   ]
 }
