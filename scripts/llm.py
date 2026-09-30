@@ -103,13 +103,14 @@ class LLMClient:
         for attempt in range(1, self.max_retries + 1):
             text = self._chat(messages)
             cleaned = self._clean(text)
-            if self._validate(cleaned):
-                logger.info("故事生成成功（第 %s 次尝试，%s 字）", attempt, len(cleaned))
+            ok, reason = self._validate(cleaned)
+            if ok:
+                logger.info("故事生成成功（第 %s 次尝试，全文 %s 字）", attempt, len(cleaned))
                 return cleaned
-            logger.warning("第 %s 次生成缺少必要章节或篇幅不足，重试", attempt)
+            logger.warning("第 %s 次生成不合格（%s），重试", attempt, reason)
             last_text = cleaned
         raise LLMError(
-            f"连续 {self.max_retries} 次生成的内容不完整。最后一次输出开头：{last_text[:200]}"
+            f"连续 {self.max_retries} 次生成的内容不达标。最后一次输出开头：{last_text[:200]}"
         )
 
     @staticmethod
@@ -121,10 +122,23 @@ class LLMClient:
             text = text[match.start():]
         return text.strip()
 
+    # 寓言故事要求 700-1000 字，这里对上下限都做宽松校验：
+    # 低于 550 或高于 1400 判为不合格并重试，1000-1400 之间接受但告警
+    STORY_MIN, STORY_SOFT_MAX, STORY_HARD_MAX = 550, 1000, 1400
+
     @classmethod
-    def _validate(cls, text: str) -> bool:
-        if not all(section in text for section in cls.REQUIRED_SECTIONS):
-            return False
+    def _validate(cls, text: str) -> tuple[bool, str]:
+        for section in cls.REQUIRED_SECTIONS:
+            if section not in text:
+                return False, f"缺少章节：{section}"
         story = re.search(r"## 寓言故事(.*?)(?=\n## )", text, flags=re.S)
-        # 寓言故事部分要求 2000-3500 字，这里对下限做宽松校验
-        return bool(story) and len(story.group(1).strip()) >= 1600
+        if not story:
+            return False, "找不到寓言故事部分"
+        length = len(story.group(1).strip())
+        if length < cls.STORY_MIN:
+            return False, f"故事仅 {length} 字（要求 700-1000 字）"
+        if length > cls.STORY_HARD_MAX:
+            return False, f"故事 {length} 字，超出 1000 字上限太多"
+        if length > cls.STORY_SOFT_MAX:
+            logger.warning("故事 %s 字，略超 1000 字上限，予以接受", length)
+        return True, "ok"
