@@ -1,0 +1,20 @@
+# ============================================================
+# 复制本文件为 config/settings.yaml 后生效（可选）。
+# 同名环境变量（如 LLM_MODEL、PUSH_CHANNEL）优先级高于本文件。
+# ============================================================
+
+push:
+  # 与 PUSH_CHANNEL 环境变量作用相同：逗号分隔多渠道
+  channels: "serverchan"
+
+llm:
+  base_url: "https://api.openai.com/v1"
+  model: "deepseek-chat"
+  temperature: 0.8
+  max_tokens: 8000
+  timeout: 300     # 单次请求超时（秒）
+  max_retries: 3   # 结构不完整时的重新生成次数
+
+stories:
+  # 预生成故事库目录：未配置 LLM_API_KEY 时按文件名顺序推送
+  pregenerated_dir: "stories/pregenerated"
