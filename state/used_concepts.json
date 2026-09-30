@@ -1,6 +1,18 @@
 {
-  "used_ids": [],
-  "last_used_id": null,
-  "pregen_used": [],
-  "history": []
+  "used_ids": [
+    "arrow-impossibility"
+  ],
+  "last_used_id": "arrow-impossibility",
+  "pregen_used": [
+    "阿罗不可能定理.md"
+  ],
+  "history": [
+    {
+      "time": "2026-09-30T10:41:54+08:00",
+      "concept_id": "arrow-impossibility",
+      "concept_name": "阿罗不可能定理",
+      "source": "pregenerated",
+      "file": "2026-09-30-10-阿罗不可能定理.md"
+    }
+  ]
 }
