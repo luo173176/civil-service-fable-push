@@ -5,9 +5,10 @@
     "path-dependence",
     "confirmation-bias",
     "loss-aversion",
-    "evidence-based-policy"
+    "evidence-based-policy",
+    "social-loafing"
   ],
-  "last_used_id": "evidence-based-policy",
+  "last_used_id": "social-loafing",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -53,6 +54,13 @@
       "concept_name": "循证决策",
       "source": "llm",
       "file": "2026-10-01-02-循证决策.md"
+    },
+    {
+      "time": "2026-10-01T15:22:28+08:00",
+      "concept_id": "social-loafing",
+      "concept_name": "社会懈怠",
+      "source": "llm",
+      "file": "2026-10-01-15-社会懈怠.md"
     }
   ]
 }
