@@ -6,9 +6,10 @@
     "confirmation-bias",
     "loss-aversion",
     "evidence-based-policy",
-    "social-loafing"
+    "social-loafing",
+    "bounded-rationality"
   ],
-  "last_used_id": "social-loafing",
+  "last_used_id": "bounded-rationality",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -61,6 +62,18 @@
       "concept_name": "社会懈怠",
       "source": "llm",
       "file": "2026-10-01-15-社会懈怠.md"
+    },
+    {
+      "time": "2026-10-01T22:41:34+08:00",
+      "concept_id": "bounded-rationality",
+      "concept_name": "有限理性",
+      "source": "llm",
+      "file": "2026-10-01-22-有限理性.md"
     }
-  ]
+  ],
+  "slot_done": {
+    "2026-10-01": [
+      "2200"
+    ]
+  }
 }
