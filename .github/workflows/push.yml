@@ -2,10 +2,12 @@ name: 每日寓言推送
 
 on:
   schedule:
-    # GitHub Actions 的 cron 只认 UTC。
-    # 北京时间 09:00 = UTC 01:00；北京时间 22:00 = UTC 14:00（北京为 UTC+8 且无夏令时）。
-    - cron: '0 1 * * *'
-    - cron: '0 14 * * *'
+    # GitHub 的 schedule 是尽力而为调度，整点最拥挤、可延迟数十分钟甚至数小时。
+    # 因此这里每 15 分钟触发一次，由 scripts/main.py 判断是否处于推送档期
+    # （SLOT_TIMES，北京时间默认 09:00,22:00，窗口默认 120 分钟）：
+    #   窗口外：秒级退出，不调用 LLM、不产生提交；
+    #   窗口内且当日该档未推送：执行真正的生成与推送。
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:

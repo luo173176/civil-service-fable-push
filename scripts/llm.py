@@ -93,7 +93,7 @@ class LLMClient:
         return content.strip()
 
     def generate_story(self, concept: dict, template_path: Path) -> str:
-        """生成完整文章；结构不完整时自动重试，最终失败抛 LLMError。"""
+        """生成完整文章；不达标时带上纠错信息重试，最终失败抛 LLMError。"""
         prompt = self.render_prompt(template_path, concept)
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -107,8 +107,20 @@ class LLMClient:
             if ok:
                 logger.info("故事生成成功（第 %s 次尝试，全文 %s 字）", attempt, len(cleaned))
                 return cleaned
-            logger.warning("第 %s 次生成不合格（%s），重试", attempt, reason)
+            logger.warning("第 %s 次生成不合格（%s），带纠错信息重试", attempt, reason)
             last_text = cleaned
+            # 纠错式重试：回传上一次输出与具体缺失项，让模型针对性修正，
+            # 避免同温下一次次重复同样的格式错误
+            messages = messages[:2] + [
+                {"role": "assistant", "content": text},
+                {"role": "user", "content": (
+                    f"你上一次的输出不合规：{reason}。请重新输出完整文章，"
+                    "严格包含以下六个二级章节，顺序固定、不得增删："
+                    "## 寓言故事、## 原来讲的是……、## 概念解释、## 隐喻对应表、"
+                    "## 公务员考试视角、## 思考题；其中「原来讲的是」章节下的第一行为"
+                    "**概念：xxx**。不要输出任何解释、开场白或代码围栏。"
+                )},
+            ]
         raise LLMError(
             f"连续 {self.max_retries} 次生成的内容不达标。最后一次输出开头：{last_text[:200]}"
         )

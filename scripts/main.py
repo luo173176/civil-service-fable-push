@@ -11,8 +11,10 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 import re
 import sys
+from datetime import timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -83,6 +85,36 @@ def pick_pregenerated(pregen_dir: Path, state: dict, concepts: list[dict],
     return text, concept
 
 
+def current_schedule_slot(state: dict, now) -> str | None:
+    """scheduled 触发时，判断当前是否落在某个推送档期的窗口内。
+
+    档期由 SLOT_TIMES（北京时间，逗号分隔，默认 09:00,22:00）定义，
+    窗口为档期后 SLOT_WINDOW_MINUTES 分钟（默认 120）。
+    窗口内且当日该档尚未推送则返回档期标识，否则返回 None。
+    """
+    specs = [s.strip() for s in (get_env("SLOT_TIMES") or "09:00,22:00").split(",") if s.strip()]
+    try:
+        window = int(get_env("SLOT_WINDOW_MINUTES") or 120)
+    except ValueError:
+        window = 120
+    today = now.strftime("%Y-%m-%d")
+    slot_done = state.setdefault("slot_done", {})
+    cutoff = (now - timedelta(days=7)).strftime("%Y-%m-%d")
+    state["slot_done"] = {d: v for d, v in slot_done.items() if d >= cutoff}
+    done = set(state["slot_done"].get(today, []))
+    for spec in specs:
+        try:
+            hh, mm = map(int, spec.split(":"))
+        except ValueError:
+            logger.warning("SLOT_TIMES 中的档期格式不正确：%s", spec)
+            continue
+        slot_id = f"{hh:02d}{mm:02d}"
+        target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
+        if target <= now <= target + timedelta(minutes=window) and slot_id not in done:
+            return slot_id
+    return None
+
+
 def main() -> int:
     if sys.stdout and hasattr(sys.stdout, "reconfigure"):
         try:
@@ -111,8 +143,19 @@ def main() -> int:
     state_path = ROOT / "state" / "used_concepts.json"
     state = load_state(state_path)
 
-    # 1. 决定生成方式并选概念
+    # scheduled 触发时按档期窗口决定是否真正推送；手动触发与本地运行不受限
+    pending_slot = None
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        pending_slot = current_schedule_slot(state, now_beijing())
+        if pending_slot is None:
+            logger.info("不处于任何推送档期窗口（或本档期已完成），本次计划运行跳过")
+            return 0
+        logger.info("命中推送档期 %s（北京时间 %s）",
+                    pending_slot, now_beijing().strftime("%H:%M"))
+
+    # 1. 决定生成方式并选概念；LLM 失败时转投预生成库兜底，保证当天仍有推送
     client = LLMClient(settings)
+    story = None
     if client.available:
         source = "llm"
         if args.concept:
@@ -127,12 +170,12 @@ def main() -> int:
         try:
             story = client.generate_story(concept, ROOT / "prompts" / "story_prompt.md")
         except (LLMError, LLMFatalError) as exc:
-            logger.error("LLM 生成失败：%s", exc)
-            return 1
-    else:
+            logger.warning("LLM 生成失败：%s；尝试预生成库兜底", exc)
+
+    if story is None:
         source = "pregenerated"
         want_name = None
-        if args.concept:
+        if not client.available and args.concept:
             want = find_concept(concepts, args.concept)
             if want is None:
                 logger.error("未找到概念 id：%s（用 --list-concepts 查看）", args.concept)
@@ -142,7 +185,8 @@ def main() -> int:
         if picked is None:
             hint = f"预生成库中没有概念「{want_name}」的故事" if want_name \
                 else "stories/pregenerated/ 预生成库为空或已全部推送"
-            logger.error("未配置 LLM_API_KEY，且%s。可先复制 examples/ 下的故事到该目录。", hint)
+            logger.error("无法获得故事（%s）。可配置 LLM_API_KEY，或往 stories/pregenerated/ 添加故事。",
+                         hint)
             return 1
         story, concept = picked
 
@@ -176,6 +220,9 @@ def main() -> int:
 
     # 4. 记录状态（由 GitHub Actions 随后自动 commit 回仓库）
     record_history(state, concept, source, out_path.name)
+    if pending_slot:
+        state.setdefault("slot_done", {}).setdefault(
+            now_beijing().strftime("%Y-%m-%d"), []).append(pending_slot)
     try:
         save_state(state_path, state)
     except OSError as exc:
