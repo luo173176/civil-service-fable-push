@@ -8,9 +8,10 @@
     "evidence-based-policy",
     "social-loafing",
     "bounded-rationality",
-    "nudging"
+    "nudging",
+    "punctuated-equilibrium"
   ],
-  "last_used_id": "nudging",
+  "last_used_id": "punctuated-equilibrium",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -77,6 +78,13 @@
       "concept_name": "助推",
       "source": "llm",
       "file": "2026-10-02-10-助推.md"
+    },
+    {
+      "time": "2026-10-02T23:50:27+08:00",
+      "concept_id": "punctuated-equilibrium",
+      "concept_name": "间断均衡理论",
+      "source": "llm",
+      "file": "2026-10-02-23-间断均衡理论.md"
     }
   ],
   "slot_done": {
@@ -84,7 +92,8 @@
       "2200"
     ],
     "2026-10-02": [
-      "0900"
+      "0900",
+      "2200"
     ]
   }
 }
