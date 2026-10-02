@@ -7,9 +7,10 @@
     "loss-aversion",
     "evidence-based-policy",
     "social-loafing",
-    "bounded-rationality"
+    "bounded-rationality",
+    "nudging"
   ],
-  "last_used_id": "bounded-rationality",
+  "last_used_id": "nudging",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -69,11 +70,21 @@
       "concept_name": "有限理性",
       "source": "llm",
       "file": "2026-10-01-22-有限理性.md"
+    },
+    {
+      "time": "2026-10-02T10:36:32+08:00",
+      "concept_id": "nudging",
+      "concept_name": "助推",
+      "source": "llm",
+      "file": "2026-10-02-10-助推.md"
     }
   ],
   "slot_done": {
     "2026-10-01": [
       "2200"
+    ],
+    "2026-10-02": [
+      "0900"
     ]
   }
 }
