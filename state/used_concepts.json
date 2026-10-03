@@ -10,9 +10,10 @@
     "bounded-rationality",
     "nudging",
     "punctuated-equilibrium",
-    "niskanen-model"
+    "niskanen-model",
+    "nash-equilibrium"
   ],
-  "last_used_id": "niskanen-model",
+  "last_used_id": "nash-equilibrium",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -93,6 +94,13 @@
       "concept_name": "尼斯坎南模型",
       "source": "llm",
       "file": "2026-10-03-10-尼斯坎南模型.md"
+    },
+    {
+      "time": "2026-10-03T22:45:58+08:00",
+      "concept_id": "nash-equilibrium",
+      "concept_name": "纳什均衡",
+      "source": "llm",
+      "file": "2026-10-03-22-纳什均衡.md"
     }
   ],
   "slot_done": {
@@ -101,6 +109,9 @@
     ],
     "2026-10-02": [
       "0900",
+      "2200"
+    ],
+    "2026-10-03": [
       "2200"
     ]
   }
