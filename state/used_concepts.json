@@ -9,9 +9,10 @@
     "social-loafing",
     "bounded-rationality",
     "nudging",
-    "punctuated-equilibrium"
+    "punctuated-equilibrium",
+    "niskanen-model"
   ],
-  "last_used_id": "punctuated-equilibrium",
+  "last_used_id": "niskanen-model",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -85,6 +86,13 @@
       "concept_name": "间断均衡理论",
       "source": "llm",
       "file": "2026-10-02-23-间断均衡理论.md"
+    },
+    {
+      "time": "2026-10-03T10:47:27+08:00",
+      "concept_id": "niskanen-model",
+      "concept_name": "尼斯坎南模型",
+      "source": "llm",
+      "file": "2026-10-03-10-尼斯坎南模型.md"
     }
   ],
   "slot_done": {
