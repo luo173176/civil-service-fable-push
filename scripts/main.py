@@ -89,30 +89,39 @@ def current_schedule_slot(state: dict, now) -> str | None:
     """scheduled 触发时，判断当前是否落在某个推送档期的窗口内。
 
     档期由 SLOT_TIMES（北京时间，逗号分隔，默认 12:00）定义，
-    窗口为档期后 SLOT_WINDOW_MINUTES 分钟（默认 120）。
-    窗口内且当日该档尚未推送则返回档期标识，否则返回 None。
+    默认在档期之后一直保持待补发，直到当天该档完成；这样即使 GitHub
+    丢弃档期附近的 schedule 事件，后续恢复的 schedule 仍能补发。
+    设置 SLOT_WINDOW_MINUTES 为正数时，才启用显式的最晚补发窗口。
     """
     specs = [s.strip() for s in (get_env("SLOT_TIMES") or "12:00").split(",") if s.strip()]
     try:
-        window = int(get_env("SLOT_WINDOW_MINUTES") or 120)
+        window = int(get_env("SLOT_WINDOW_MINUTES") or 0)
     except ValueError:
-        window = 120
+        window = 0
     today = now.strftime("%Y-%m-%d")
     slot_done = state.setdefault("slot_done", {})
     cutoff = (now - timedelta(days=7)).strftime("%Y-%m-%d")
     state["slot_done"] = {d: v for d, v in slot_done.items() if d >= cutoff}
     done = set(state["slot_done"].get(today, []))
+    due: list[tuple[object, str]] = []
     for spec in specs:
         try:
             hh, mm = map(int, spec.split(":"))
         except ValueError:
             logger.warning("SLOT_TIMES 中的档期格式不正确：%s", spec)
             continue
+        if not (0 <= hh <= 23 and 0 <= mm <= 59):
+            logger.warning("SLOT_TIMES 中的时间超出范围：%s", spec)
+            continue
         slot_id = f"{hh:02d}{mm:02d}"
         target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
-        if target <= now <= target + timedelta(minutes=window) and slot_id not in done:
-            return slot_id
-    return None
+        if target <= now and slot_id not in done:
+            if window > 0 and now > target + timedelta(minutes=window):
+                logger.warning("档期 %s 已超过显式补发窗口 %s 分钟，跳过", slot_id, window)
+                continue
+            due.append((target, slot_id))
+    # 多档期同时积压时优先补发最近的一个，避免晚间运行误发早上的档期。
+    return max(due, key=lambda item: item[0])[1] if due else None
 
 
 def main() -> int:

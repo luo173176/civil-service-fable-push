@@ -45,6 +45,12 @@ jobs:
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
           LLM_TEMPERATURE: ${{ secrets.LLM_TEMPERATURE }}
+          LLM_MAX_TOKENS: ${{ secrets.LLM_MAX_TOKENS }}
+          LLM_TIMEOUT: ${{ secrets.LLM_TIMEOUT }}
+          LLM_MAX_RETRIES: ${{ secrets.LLM_MAX_RETRIES }}
+          # ---- 调度：北京时间，默认每天 12:00；0 或不填表示错过后持续补发 ----
+          SLOT_TIMES: ${{ secrets.SLOT_TIMES }}
+          SLOT_WINDOW_MINUTES: ${{ secrets.SLOT_WINDOW_MINUTES }}
           # ---- 推送渠道：逗号分隔，可选 serverchan/pushplus/bark/telegram/wecom/dingtalk/feishu/mail ----
           PUSH_CHANNEL: ${{ secrets.PUSH_CHANNEL }}
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}

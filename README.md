@@ -183,10 +183,10 @@ python scripts/main.py --list-concepts            # 查看概念库
 
 ### 修改推送时间
 
-默认每天北京时间 **12:00** 推送一次。GitHub 的 schedule 是尽力而为调度，高负载时会大量丢弃事件（实测存活率很低），因此采用三层策略：工作流**每 15 分钟 + 档期窗口内多条错峰 cron** 触发，由脚本判断当前是否处于推送档期窗口（档期后默认 120 分钟内）：窗口外秒级退出，不调用 LLM、不产生提交；窗口内且当日该档尚未推送，才执行真正的生成与推送。**注意：GitHub 免费调度无法保证 100% 触发**，想确保每天必达，用下面任一方式由外部准时调用 workflow_dispatch（手动触发秒级启动、不受窗口限制）：在本机用任务计划/crontab 每天 11:58 执行 `gh workflow run push.yml -R <你的用户名>/civil-service-fable-push`，或在 cron-job.org 配置北京时间 12:00 调用 workflow_dispatch API（创建一个仅 `workflow` 权限的 fine-grained token 即可）。
+默认每天北京时间 **12:00** 推送一次。GitHub 的 schedule 是尽力而为调度，高负载时会延迟或丢弃事件，因此工作流每 15 分钟触发，并在档期附近增加错峰 cron。脚本只在档期前跳过；**档期到了以后默认持续待发，直到当天成功**，所以即使 12:00–14:00 的事件全部丢失，14:15 之后恢复的下一次 schedule 也会补发，不会因固定 120 分钟窗口而整天漏发。若必须分钟级准点，仍应由外部定时器调用 `workflow_dispatch`。
 
 - **改档期时间**：新增 Secret `SLOT_TIMES`，填北京时间、逗号分隔，如 `08:30,21:30`；
-- **改窗口时长**：Secret `SLOT_WINDOW_MINUTES`（默认 120）；
+- **限制补发窗口**：Secret `SLOT_WINDOW_MINUTES`（默认不限制；填正数后表示档期后的最长补发分钟数，一般不建议设置）；
 - 手动 Run workflow **不受档期限制**，随时可加推一篇；
 - 想分钟级准点：可在 cron-job.org 等免费定时服务配置北京时间 12:00 调用本仓库的 workflow_dispatch API（创建一个仅 `workflow` 权限的 fine-grained token 即可）。
 
