@@ -12,9 +12,10 @@
     "punctuated-equilibrium",
     "niskanen-model",
     "nash-equilibrium",
-    "proportionality"
+    "proportionality",
+    "tacitus-trap"
   ],
-  "last_used_id": "proportionality",
+  "last_used_id": "tacitus-trap",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -109,6 +110,13 @@
       "concept_name": "比例原则",
       "source": "llm",
       "file": "2026-10-04-15-比例原则.md"
+    },
+    {
+      "time": "2026-10-04T18:33:01+08:00",
+      "concept_id": "tacitus-trap",
+      "concept_name": "塔西佗陷阱",
+      "source": "llm",
+      "file": "2026-10-04-18-塔西佗陷阱.md"
     }
   ],
   "slot_done": {
@@ -121,6 +129,9 @@
     ],
     "2026-10-03": [
       "2200"
+    ],
+    "2026-10-04": [
+      "1200"
     ]
   }
 }
