@@ -11,9 +11,10 @@
     "nudging",
     "punctuated-equilibrium",
     "niskanen-model",
-    "nash-equilibrium"
+    "nash-equilibrium",
+    "proportionality"
   ],
-  "last_used_id": "nash-equilibrium",
+  "last_used_id": "proportionality",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -101,6 +102,13 @@
       "concept_name": "纳什均衡",
       "source": "llm",
       "file": "2026-10-03-22-纳什均衡.md"
+    },
+    {
+      "time": "2026-10-04T15:29:09+08:00",
+      "concept_id": "proportionality",
+      "concept_name": "比例原则",
+      "source": "llm",
+      "file": "2026-10-04-15-比例原则.md"
     }
   ],
   "slot_done": {
