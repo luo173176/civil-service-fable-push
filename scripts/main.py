@@ -88,11 +88,11 @@ def pick_pregenerated(pregen_dir: Path, state: dict, concepts: list[dict],
 def current_schedule_slot(state: dict, now) -> str | None:
     """scheduled 触发时，判断当前是否落在某个推送档期的窗口内。
 
-    档期由 SLOT_TIMES（北京时间，逗号分隔，默认 09:00,22:00）定义，
+    档期由 SLOT_TIMES（北京时间，逗号分隔，默认 12:00）定义，
     窗口为档期后 SLOT_WINDOW_MINUTES 分钟（默认 120）。
     窗口内且当日该档尚未推送则返回档期标识，否则返回 None。
     """
-    specs = [s.strip() for s in (get_env("SLOT_TIMES") or "09:00,22:00").split(",") if s.strip()]
+    specs = [s.strip() for s in (get_env("SLOT_TIMES") or "12:00").split(",") if s.strip()]
     try:
         window = int(get_env("SLOT_WINDOW_MINUTES") or 120)
     except ValueError:
