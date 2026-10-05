@@ -13,9 +13,10 @@
     "niskanen-model",
     "nash-equilibrium",
     "proportionality",
-    "tacitus-trap"
+    "tacitus-trap",
+    "multi-streams"
   ],
-  "last_used_id": "tacitus-trap",
+  "last_used_id": "multi-streams",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -117,6 +118,13 @@
       "concept_name": "塔西佗陷阱",
       "source": "llm",
       "file": "2026-10-04-18-塔西佗陷阱.md"
+    },
+    {
+      "time": "2026-10-05T15:42:41+08:00",
+      "concept_id": "multi-streams",
+      "concept_name": "多源流理论",
+      "source": "llm",
+      "file": "2026-10-05-15-多源流理论.md"
     }
   ],
   "slot_done": {
@@ -131,6 +139,9 @@
       "2200"
     ],
     "2026-10-04": [
+      "1200"
+    ],
+    "2026-10-05": [
       "1200"
     ]
   }
