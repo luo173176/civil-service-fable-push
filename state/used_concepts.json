@@ -14,9 +14,10 @@
     "nash-equilibrium",
     "proportionality",
     "tacitus-trap",
-    "multi-streams"
+    "multi-streams",
+    "collaborative-governance"
   ],
-  "last_used_id": "multi-streams",
+  "last_used_id": "collaborative-governance",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -125,6 +126,13 @@
       "concept_name": "多源流理论",
       "source": "llm",
       "file": "2026-10-05-15-多源流理论.md"
+    },
+    {
+      "time": "2026-10-06T17:27:15+08:00",
+      "concept_id": "collaborative-governance",
+      "concept_name": "协同治理",
+      "source": "llm",
+      "file": "2026-10-06-17-协同治理.md"
     }
   ],
   "slot_done": {
@@ -142,6 +150,9 @@
       "1200"
     ],
     "2026-10-05": [
+      "1200"
+    ],
+    "2026-10-06": [
       "1200"
     ]
   }
