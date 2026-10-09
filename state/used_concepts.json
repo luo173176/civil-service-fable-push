@@ -17,9 +17,10 @@
     "multi-streams",
     "collaborative-governance",
     "adverse-selection",
-    "public-value-failure"
+    "public-value-failure",
+    "public-goods"
   ],
-  "last_used_id": "public-value-failure",
+  "last_used_id": "public-goods",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -149,12 +150,16 @@
       "concept_name": "公共价值失灵",
       "source": "llm",
       "file": "2026-10-08-14-公共价值失灵.md"
+    },
+    {
+      "time": "2026-10-09T12:56:11+08:00",
+      "concept_id": "public-goods",
+      "concept_name": "公共物品",
+      "source": "llm",
+      "file": "2026-10-09-12-公共物品.md"
     }
   ],
   "slot_done": {
-    "2026-10-01": [
-      "2200"
-    ],
     "2026-10-02": [
       "0900",
       "2200"
@@ -175,6 +180,9 @@
       "1200"
     ],
     "2026-10-08": [
+      "1200"
+    ],
+    "2026-10-09": [
       "1200"
     ]
   }
