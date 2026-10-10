@@ -18,9 +18,10 @@
     "collaborative-governance",
     "adverse-selection",
     "public-value-failure",
-    "public-goods"
+    "public-goods",
+    "discretionary-power"
   ],
-  "last_used_id": "public-goods",
+  "last_used_id": "discretionary-power",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -157,13 +158,16 @@
       "concept_name": "公共物品",
       "source": "llm",
       "file": "2026-10-09-12-公共物品.md"
+    },
+    {
+      "time": "2026-10-10T15:45:24+08:00",
+      "concept_id": "discretionary-power",
+      "concept_name": "行政自由裁量权",
+      "source": "llm",
+      "file": "2026-10-10-15-行政自由裁量权.md"
     }
   ],
   "slot_done": {
-    "2026-10-02": [
-      "0900",
-      "2200"
-    ],
     "2026-10-03": [
       "2200"
     ],
@@ -183,6 +187,9 @@
       "1200"
     ],
     "2026-10-09": [
+      "1200"
+    ],
+    "2026-10-10": [
       "1200"
     ]
   }
