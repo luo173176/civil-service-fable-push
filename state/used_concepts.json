@@ -19,9 +19,10 @@
     "adverse-selection",
     "public-value-failure",
     "public-goods",
-    "discretionary-power"
+    "discretionary-power",
+    "externality"
   ],
-  "last_used_id": "discretionary-power",
+  "last_used_id": "externality",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -165,12 +166,16 @@
       "concept_name": "行政自由裁量权",
       "source": "llm",
       "file": "2026-10-10-15-行政自由裁量权.md"
+    },
+    {
+      "time": "2026-10-11T15:13:12+08:00",
+      "concept_id": "externality",
+      "concept_name": "外部性",
+      "source": "llm",
+      "file": "2026-10-11-15-外部性.md"
     }
   ],
   "slot_done": {
-    "2026-10-03": [
-      "2200"
-    ],
     "2026-10-04": [
       "1200"
     ],
@@ -190,6 +195,9 @@
       "1200"
     ],
     "2026-10-10": [
+      "1200"
+    ],
+    "2026-10-11": [
       "1200"
     ]
   }
