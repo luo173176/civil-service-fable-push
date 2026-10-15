@@ -23,9 +23,10 @@
     "externality",
     "advocacy-coalition",
     "rent-seeking",
-    "voting-paradox"
+    "voting-paradox",
+    "principal-agent"
   ],
-  "last_used_id": "voting-paradox",
+  "last_used_id": "principal-agent",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -197,12 +198,16 @@
       "concept_name": "孔多塞投票悖论",
       "source": "llm",
       "file": "2026-10-14-12-孔多塞投票悖论.md"
+    },
+    {
+      "time": "2026-10-15T13:15:18+08:00",
+      "concept_id": "principal-agent",
+      "concept_name": "委托代理理论",
+      "source": "llm",
+      "file": "2026-10-15-13-委托代理理论.md"
     }
   ],
   "slot_done": {
-    "2026-10-07": [
-      "1200"
-    ],
     "2026-10-08": [
       "1200"
     ],
@@ -222,6 +227,9 @@
       "1200"
     ],
     "2026-10-14": [
+      "1200"
+    ],
+    "2026-10-15": [
       "1200"
     ]
   }
