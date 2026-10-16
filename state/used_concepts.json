@@ -24,9 +24,10 @@
     "advocacy-coalition",
     "rent-seeking",
     "voting-paradox",
-    "principal-agent"
+    "principal-agent",
+    "matthew-effect"
   ],
-  "last_used_id": "principal-agent",
+  "last_used_id": "matthew-effect",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -205,12 +206,16 @@
       "concept_name": "委托代理理论",
       "source": "llm",
       "file": "2026-10-15-13-委托代理理论.md"
+    },
+    {
+      "time": "2026-10-16T13:03:50+08:00",
+      "concept_id": "matthew-effect",
+      "concept_name": "马太效应",
+      "source": "llm",
+      "file": "2026-10-16-13-马太效应.md"
     }
   ],
   "slot_done": {
-    "2026-10-08": [
-      "1200"
-    ],
     "2026-10-09": [
       "1200"
     ],
@@ -230,6 +235,9 @@
       "1200"
     ],
     "2026-10-15": [
+      "1200"
+    ],
+    "2026-10-16": [
       "1200"
     ]
   }
