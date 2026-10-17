@@ -25,9 +25,10 @@
     "rent-seeking",
     "voting-paradox",
     "principal-agent",
-    "matthew-effect"
+    "matthew-effect",
+    "occams-razor"
   ],
-  "last_used_id": "matthew-effect",
+  "last_used_id": "occams-razor",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -213,12 +214,16 @@
       "concept_name": "马太效应",
       "source": "llm",
       "file": "2026-10-16-13-马太效应.md"
+    },
+    {
+      "time": "2026-10-17T15:59:42+08:00",
+      "concept_id": "occams-razor",
+      "concept_name": "奥卡姆剃刀",
+      "source": "llm",
+      "file": "2026-10-17-15-奥卡姆剃刀.md"
     }
   ],
   "slot_done": {
-    "2026-10-09": [
-      "1200"
-    ],
     "2026-10-10": [
       "1200"
     ],
@@ -238,6 +243,9 @@
       "1200"
     ],
     "2026-10-16": [
+      "1200"
+    ],
+    "2026-10-17": [
       "1200"
     ]
   }
