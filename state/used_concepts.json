@@ -26,9 +26,10 @@
     "voting-paradox",
     "principal-agent",
     "matthew-effect",
-    "occams-razor"
+    "occams-razor",
+    "administrative-burden"
   ],
-  "last_used_id": "occams-razor",
+  "last_used_id": "administrative-burden",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -221,12 +222,16 @@
       "concept_name": "奥卡姆剃刀",
       "source": "llm",
       "file": "2026-10-17-15-奥卡姆剃刀.md"
+    },
+    {
+      "time": "2026-10-18T12:57:14+08:00",
+      "concept_id": "administrative-burden",
+      "concept_name": "行政负担",
+      "source": "llm",
+      "file": "2026-10-18-12-行政负担.md"
     }
   ],
   "slot_done": {
-    "2026-10-10": [
-      "1200"
-    ],
     "2026-10-11": [
       "1200"
     ],
@@ -246,6 +251,9 @@
       "1200"
     ],
     "2026-10-17": [
+      "1200"
+    ],
+    "2026-10-18": [
       "1200"
     ]
   }
