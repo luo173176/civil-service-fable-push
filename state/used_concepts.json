@@ -27,9 +27,10 @@
     "principal-agent",
     "matthew-effect",
     "occams-razor",
-    "administrative-burden"
+    "administrative-burden",
+    "policy-termination"
   ],
-  "last_used_id": "administrative-burden",
+  "last_used_id": "policy-termination",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -229,12 +230,16 @@
       "concept_name": "行政负担",
       "source": "llm",
       "file": "2026-10-18-12-行政负担.md"
+    },
+    {
+      "time": "2026-10-19T14:57:57+08:00",
+      "concept_id": "policy-termination",
+      "concept_name": "政策终结",
+      "source": "llm",
+      "file": "2026-10-19-14-政策终结.md"
     }
   ],
   "slot_done": {
-    "2026-10-11": [
-      "1200"
-    ],
     "2026-10-12": [
       "1200"
     ],
@@ -254,6 +259,9 @@
       "1200"
     ],
     "2026-10-18": [
+      "1200"
+    ],
+    "2026-10-19": [
       "1200"
     ]
   }
