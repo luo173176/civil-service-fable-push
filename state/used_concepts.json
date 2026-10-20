@@ -28,9 +28,10 @@
     "matthew-effect",
     "occams-razor",
     "administrative-burden",
-    "policy-termination"
+    "policy-termination",
+    "survivorship-bias"
   ],
-  "last_used_id": "policy-termination",
+  "last_used_id": "survivorship-bias",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -237,12 +238,16 @@
       "concept_name": "政策终结",
       "source": "llm",
       "file": "2026-10-19-14-政策终结.md"
+    },
+    {
+      "time": "2026-10-20T15:35:04+08:00",
+      "concept_id": "survivorship-bias",
+      "concept_name": "幸存者偏差",
+      "source": "llm",
+      "file": "2026-10-20-15-幸存者偏差.md"
     }
   ],
   "slot_done": {
-    "2026-10-12": [
-      "1200"
-    ],
     "2026-10-13": [
       "1200"
     ],
@@ -262,6 +267,9 @@
       "1200"
     ],
     "2026-10-19": [
+      "1200"
+    ],
+    "2026-10-20": [
       "1200"
     ]
   }
