@@ -29,9 +29,10 @@
     "occams-razor",
     "administrative-burden",
     "policy-termination",
-    "survivorship-bias"
+    "survivorship-bias",
+    "moral-hazard"
   ],
-  "last_used_id": "survivorship-bias",
+  "last_used_id": "moral-hazard",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -245,12 +246,16 @@
       "concept_name": "幸存者偏差",
       "source": "llm",
       "file": "2026-10-20-15-幸存者偏差.md"
+    },
+    {
+      "time": "2026-10-21T12:48:59+08:00",
+      "concept_id": "moral-hazard",
+      "concept_name": "道德风险",
+      "source": "llm",
+      "file": "2026-10-21-12-道德风险.md"
     }
   ],
   "slot_done": {
-    "2026-10-13": [
-      "1200"
-    ],
     "2026-10-14": [
       "1200"
     ],
@@ -270,6 +275,9 @@
       "1200"
     ],
     "2026-10-20": [
+      "1200"
+    ],
+    "2026-10-21": [
       "1200"
     ]
   }
