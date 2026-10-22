@@ -30,9 +30,10 @@
     "administrative-burden",
     "policy-termination",
     "survivorship-bias",
-    "moral-hazard"
+    "moral-hazard",
+    "meta-governance"
   ],
-  "last_used_id": "moral-hazard",
+  "last_used_id": "meta-governance",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -253,12 +254,16 @@
       "concept_name": "道德风险",
       "source": "llm",
       "file": "2026-10-21-12-道德风险.md"
+    },
+    {
+      "time": "2026-10-22T13:48:39+08:00",
+      "concept_id": "meta-governance",
+      "concept_name": "元治理",
+      "source": "llm",
+      "file": "2026-10-22-13-元治理.md"
     }
   ],
   "slot_done": {
-    "2026-10-14": [
-      "1200"
-    ],
     "2026-10-15": [
       "1200"
     ],
@@ -278,6 +283,9 @@
       "1200"
     ],
     "2026-10-21": [
+      "1200"
+    ],
+    "2026-10-22": [
       "1200"
     ]
   }
