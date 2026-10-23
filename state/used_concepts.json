@@ -31,9 +31,10 @@
     "policy-termination",
     "survivorship-bias",
     "moral-hazard",
-    "meta-governance"
+    "meta-governance",
+    "regulatory-capture"
   ],
-  "last_used_id": "meta-governance",
+  "last_used_id": "regulatory-capture",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -261,12 +262,16 @@
       "concept_name": "元治理",
       "source": "llm",
       "file": "2026-10-22-13-元治理.md"
+    },
+    {
+      "time": "2026-10-23T14:20:12+08:00",
+      "concept_id": "regulatory-capture",
+      "concept_name": "规制俘获",
+      "source": "llm",
+      "file": "2026-10-23-14-规制俘获.md"
     }
   ],
   "slot_done": {
-    "2026-10-15": [
-      "1200"
-    ],
     "2026-10-16": [
       "1200"
     ],
@@ -286,6 +291,9 @@
       "1200"
     ],
     "2026-10-22": [
+      "1200"
+    ],
+    "2026-10-23": [
       "1200"
     ]
   }
