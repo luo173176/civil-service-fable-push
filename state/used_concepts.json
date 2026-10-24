@@ -32,9 +32,10 @@
     "survivorship-bias",
     "moral-hazard",
     "meta-governance",
-    "regulatory-capture"
+    "regulatory-capture",
+    "iron-law-of-oligarchy"
   ],
-  "last_used_id": "regulatory-capture",
+  "last_used_id": "iron-law-of-oligarchy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -269,12 +270,16 @@
       "concept_name": "规制俘获",
       "source": "llm",
       "file": "2026-10-23-14-规制俘获.md"
+    },
+    {
+      "time": "2026-10-24T14:30:17+08:00",
+      "concept_id": "iron-law-of-oligarchy",
+      "concept_name": "寡头铁律",
+      "source": "llm",
+      "file": "2026-10-24-14-寡头铁律.md"
     }
   ],
   "slot_done": {
-    "2026-10-16": [
-      "1200"
-    ],
     "2026-10-17": [
       "1200"
     ],
@@ -294,6 +299,9 @@
       "1200"
     ],
     "2026-10-23": [
+      "1200"
+    ],
+    "2026-10-24": [
       "1200"
     ]
   }
