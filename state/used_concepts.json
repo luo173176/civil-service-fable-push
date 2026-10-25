@@ -33,9 +33,10 @@
     "moral-hazard",
     "meta-governance",
     "regulatory-capture",
-    "iron-law-of-oligarchy"
+    "iron-law-of-oligarchy",
+    "policy-diffusion"
   ],
-  "last_used_id": "iron-law-of-oligarchy",
+  "last_used_id": "policy-diffusion",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -277,12 +278,16 @@
       "concept_name": "寡头铁律",
       "source": "llm",
       "file": "2026-10-24-14-寡头铁律.md"
+    },
+    {
+      "time": "2026-10-25T13:21:28+08:00",
+      "concept_id": "policy-diffusion",
+      "concept_name": "政策扩散",
+      "source": "llm",
+      "file": "2026-10-25-13-政策扩散.md"
     }
   ],
   "slot_done": {
-    "2026-10-17": [
-      "1200"
-    ],
     "2026-10-18": [
       "1200"
     ],
@@ -302,6 +307,9 @@
       "1200"
     ],
     "2026-10-24": [
+      "1200"
+    ],
+    "2026-10-25": [
       "1200"
     ]
   }
