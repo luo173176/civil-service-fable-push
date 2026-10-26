@@ -34,9 +34,10 @@
     "meta-governance",
     "regulatory-capture",
     "iron-law-of-oligarchy",
-    "policy-diffusion"
+    "policy-diffusion",
+    "new-public-service"
   ],
-  "last_used_id": "policy-diffusion",
+  "last_used_id": "new-public-service",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -285,12 +286,16 @@
       "concept_name": "政策扩散",
       "source": "llm",
       "file": "2026-10-25-13-政策扩散.md"
+    },
+    {
+      "time": "2026-10-26T14:14:57+08:00",
+      "concept_id": "new-public-service",
+      "concept_name": "新公共服务",
+      "source": "llm",
+      "file": "2026-10-26-14-新公共服务.md"
     }
   ],
   "slot_done": {
-    "2026-10-18": [
-      "1200"
-    ],
     "2026-10-19": [
       "1200"
     ],
@@ -310,6 +315,9 @@
       "1200"
     ],
     "2026-10-25": [
+      "1200"
+    ],
+    "2026-10-26": [
       "1200"
     ]
   }
