@@ -35,9 +35,10 @@
     "regulatory-capture",
     "iron-law-of-oligarchy",
     "policy-diffusion",
-    "new-public-service"
+    "new-public-service",
+    "algorithmic-bureaucracy"
   ],
-  "last_used_id": "new-public-service",
+  "last_used_id": "algorithmic-bureaucracy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -293,12 +294,16 @@
       "concept_name": "新公共服务",
       "source": "llm",
       "file": "2026-10-26-14-新公共服务.md"
+    },
+    {
+      "time": "2026-10-27T15:53:16+08:00",
+      "concept_id": "algorithmic-bureaucracy",
+      "concept_name": "算法官僚",
+      "source": "llm",
+      "file": "2026-10-27-15-算法官僚.md"
     }
   ],
   "slot_done": {
-    "2026-10-19": [
-      "1200"
-    ],
     "2026-10-20": [
       "1200"
     ],
@@ -318,6 +323,9 @@
       "1200"
     ],
     "2026-10-26": [
+      "1200"
+    ],
+    "2026-10-27": [
       "1200"
     ]
   }
