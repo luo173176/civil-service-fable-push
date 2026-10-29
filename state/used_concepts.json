@@ -37,9 +37,10 @@
     "policy-diffusion",
     "new-public-service",
     "algorithmic-bureaucracy",
-    "information-asymmetry"
+    "information-asymmetry",
+    "incrementalism"
   ],
-  "last_used_id": "information-asymmetry",
+  "last_used_id": "incrementalism",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -309,12 +310,16 @@
       "concept_name": "信息不对称",
       "source": "llm",
       "file": "2026-10-28-16-信息不对称.md"
+    },
+    {
+      "time": "2026-10-29T14:30:22+08:00",
+      "concept_id": "incrementalism",
+      "concept_name": "渐进主义",
+      "source": "llm",
+      "file": "2026-10-29-14-渐进主义.md"
     }
   ],
   "slot_done": {
-    "2026-10-21": [
-      "1200"
-    ],
     "2026-10-22": [
       "1200"
     ],
@@ -334,6 +339,9 @@
       "1200"
     ],
     "2026-10-28": [
+      "1200"
+    ],
+    "2026-10-29": [
       "1200"
     ]
   }
