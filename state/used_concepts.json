@@ -38,9 +38,10 @@
     "new-public-service",
     "algorithmic-bureaucracy",
     "information-asymmetry",
-    "incrementalism"
+    "incrementalism",
+    "policy-feedback"
   ],
-  "last_used_id": "incrementalism",
+  "last_used_id": "policy-feedback",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -317,12 +318,16 @@
       "concept_name": "渐进主义",
       "source": "llm",
       "file": "2026-10-29-14-渐进主义.md"
+    },
+    {
+      "time": "2026-10-30T17:41:52+08:00",
+      "concept_id": "policy-feedback",
+      "concept_name": "政策反馈效应",
+      "source": "llm",
+      "file": "2026-10-30-17-政策反馈效应.md"
     }
   ],
   "slot_done": {
-    "2026-10-22": [
-      "1200"
-    ],
     "2026-10-23": [
       "1200"
     ],
@@ -342,6 +347,9 @@
       "1200"
     ],
     "2026-10-29": [
+      "1200"
+    ],
+    "2026-10-30": [
       "1200"
     ]
   }
