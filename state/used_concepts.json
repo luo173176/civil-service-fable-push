@@ -39,9 +39,10 @@
     "algorithmic-bureaucracy",
     "information-asymmetry",
     "incrementalism",
-    "policy-feedback"
+    "policy-feedback",
+    "giddens-paradox"
   ],
-  "last_used_id": "policy-feedback",
+  "last_used_id": "giddens-paradox",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -325,12 +326,16 @@
       "concept_name": "政策反馈效应",
       "source": "llm",
       "file": "2026-10-30-17-政策反馈效应.md"
+    },
+    {
+      "time": "2026-10-31T14:20:09+08:00",
+      "concept_id": "giddens-paradox",
+      "concept_name": "吉登斯悖论",
+      "source": "llm",
+      "file": "2026-10-31-14-吉登斯悖论.md"
     }
   ],
   "slot_done": {
-    "2026-10-23": [
-      "1200"
-    ],
     "2026-10-24": [
       "1200"
     ],
@@ -350,6 +355,9 @@
       "1200"
     ],
     "2026-10-30": [
+      "1200"
+    ],
+    "2026-10-31": [
       "1200"
     ]
   }
