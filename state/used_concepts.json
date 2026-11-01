@@ -40,9 +40,10 @@
     "information-asymmetry",
     "incrementalism",
     "policy-feedback",
-    "giddens-paradox"
+    "giddens-paradox",
+    "parkinson-law"
   ],
-  "last_used_id": "giddens-paradox",
+  "last_used_id": "parkinson-law",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -333,12 +334,16 @@
       "concept_name": "吉登斯悖论",
       "source": "llm",
       "file": "2026-10-31-14-吉登斯悖论.md"
+    },
+    {
+      "time": "2026-11-01T12:45:56+08:00",
+      "concept_id": "parkinson-law",
+      "concept_name": "帕金森定律",
+      "source": "llm",
+      "file": "2026-11-01-12-帕金森定律.md"
     }
   ],
   "slot_done": {
-    "2026-10-24": [
-      "1200"
-    ],
     "2026-10-25": [
       "1200"
     ],
@@ -358,6 +363,9 @@
       "1200"
     ],
     "2026-10-31": [
+      "1200"
+    ],
+    "2026-11-01": [
       "1200"
     ]
   }
