@@ -41,9 +41,10 @@
     "incrementalism",
     "policy-feedback",
     "giddens-paradox",
-    "parkinson-law"
+    "parkinson-law",
+    "prisoners-dilemma"
   ],
-  "last_used_id": "parkinson-law",
+  "last_used_id": "prisoners-dilemma",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -341,12 +342,16 @@
       "concept_name": "帕金森定律",
       "source": "llm",
       "file": "2026-11-01-12-帕金森定律.md"
+    },
+    {
+      "time": "2026-11-02T15:35:04+08:00",
+      "concept_id": "prisoners-dilemma",
+      "concept_name": "囚徒困境",
+      "source": "llm",
+      "file": "2026-11-02-15-囚徒困境.md"
     }
   ],
   "slot_done": {
-    "2026-10-25": [
-      "1200"
-    ],
     "2026-10-26": [
       "1200"
     ],
@@ -366,6 +371,9 @@
       "1200"
     ],
     "2026-11-01": [
+      "1200"
+    ],
+    "2026-11-02": [
       "1200"
     ]
   }
