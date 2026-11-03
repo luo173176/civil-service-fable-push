@@ -42,9 +42,10 @@
     "policy-feedback",
     "giddens-paradox",
     "parkinson-law",
-    "prisoners-dilemma"
+    "prisoners-dilemma",
+    "diffusion-of-responsibility"
   ],
-  "last_used_id": "prisoners-dilemma",
+  "last_used_id": "diffusion-of-responsibility",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -349,12 +350,16 @@
       "concept_name": "囚徒困境",
       "source": "llm",
       "file": "2026-11-02-15-囚徒困境.md"
+    },
+    {
+      "time": "2026-11-03T14:32:10+08:00",
+      "concept_id": "diffusion-of-responsibility",
+      "concept_name": "责任分散效应",
+      "source": "llm",
+      "file": "2026-11-03-14-责任分散效应.md"
     }
   ],
   "slot_done": {
-    "2026-10-26": [
-      "1200"
-    ],
     "2026-10-27": [
       "1200"
     ],
@@ -374,6 +379,9 @@
       "1200"
     ],
     "2026-11-02": [
+      "1200"
+    ],
+    "2026-11-03": [
       "1200"
     ]
   }
