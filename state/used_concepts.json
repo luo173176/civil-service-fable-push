@@ -43,9 +43,10 @@
     "giddens-paradox",
     "parkinson-law",
     "prisoners-dilemma",
-    "diffusion-of-responsibility"
+    "diffusion-of-responsibility",
+    "sunk-cost-fallacy"
   ],
-  "last_used_id": "diffusion-of-responsibility",
+  "last_used_id": "sunk-cost-fallacy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -357,12 +358,16 @@
       "concept_name": "责任分散效应",
       "source": "llm",
       "file": "2026-11-03-14-责任分散效应.md"
+    },
+    {
+      "time": "2026-11-04T15:18:40+08:00",
+      "concept_id": "sunk-cost-fallacy",
+      "concept_name": "沉没成本谬误",
+      "source": "llm",
+      "file": "2026-11-04-15-沉没成本谬误.md"
     }
   ],
   "slot_done": {
-    "2026-10-27": [
-      "1200"
-    ],
     "2026-10-28": [
       "1200"
     ],
@@ -382,6 +387,9 @@
       "1200"
     ],
     "2026-11-03": [
+      "1200"
+    ],
+    "2026-11-04": [
       "1200"
     ]
   }
