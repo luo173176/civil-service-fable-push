@@ -44,9 +44,10 @@
     "parkinson-law",
     "prisoners-dilemma",
     "diffusion-of-responsibility",
-    "sunk-cost-fallacy"
+    "sunk-cost-fallacy",
+    "policy-window"
   ],
-  "last_used_id": "sunk-cost-fallacy",
+  "last_used_id": "policy-window",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -365,12 +366,16 @@
       "concept_name": "沉没成本谬误",
       "source": "llm",
       "file": "2026-11-04-15-沉没成本谬误.md"
+    },
+    {
+      "time": "2026-11-05T17:03:16+08:00",
+      "concept_id": "policy-window",
+      "concept_name": "政策之窗",
+      "source": "llm",
+      "file": "2026-11-05-17-政策之窗.md"
     }
   ],
   "slot_done": {
-    "2026-10-28": [
-      "1200"
-    ],
     "2026-10-29": [
       "1200"
     ],
@@ -390,6 +395,9 @@
       "1200"
     ],
     "2026-11-04": [
+      "1200"
+    ],
+    "2026-11-05": [
       "1200"
     ]
   }
