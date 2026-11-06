@@ -45,9 +45,10 @@
     "prisoners-dilemma",
     "diffusion-of-responsibility",
     "sunk-cost-fallacy",
-    "policy-window"
+    "policy-window",
+    "public-choice"
   ],
-  "last_used_id": "policy-window",
+  "last_used_id": "public-choice",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -373,12 +374,16 @@
       "concept_name": "政策之窗",
       "source": "llm",
       "file": "2026-11-05-17-政策之窗.md"
+    },
+    {
+      "time": "2026-11-06T19:04:51+08:00",
+      "concept_id": "public-choice",
+      "concept_name": "公共选择理论",
+      "source": "llm",
+      "file": "2026-11-06-19-公共选择理论.md"
     }
   ],
   "slot_done": {
-    "2026-10-29": [
-      "1200"
-    ],
     "2026-10-30": [
       "1200"
     ],
@@ -398,6 +403,9 @@
       "1200"
     ],
     "2026-11-05": [
+      "1200"
+    ],
+    "2026-11-06": [
       "1200"
     ]
   }
