@@ -46,9 +46,10 @@
     "diffusion-of-responsibility",
     "sunk-cost-fallacy",
     "policy-window",
-    "public-choice"
+    "public-choice",
+    "commons-governance"
   ],
-  "last_used_id": "public-choice",
+  "last_used_id": "commons-governance",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -381,12 +382,16 @@
       "concept_name": "公共选择理论",
       "source": "llm",
       "file": "2026-11-06-19-公共选择理论.md"
+    },
+    {
+      "time": "2026-11-07T17:17:42+08:00",
+      "concept_id": "commons-governance",
+      "concept_name": "公共池塘资源自主治理",
+      "source": "llm",
+      "file": "2026-11-07-17-公共池塘资源自主治理.md"
     }
   ],
   "slot_done": {
-    "2026-10-30": [
-      "1200"
-    ],
     "2026-10-31": [
       "1200"
     ],
@@ -406,6 +411,9 @@
       "1200"
     ],
     "2026-11-06": [
+      "1200"
+    ],
+    "2026-11-07": [
       "1200"
     ]
   }
