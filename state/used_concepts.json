@@ -47,9 +47,10 @@
     "sunk-cost-fallacy",
     "policy-window",
     "public-choice",
-    "commons-governance"
+    "commons-governance",
+    "garbage-can"
   ],
-  "last_used_id": "commons-governance",
+  "last_used_id": "garbage-can",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -389,12 +390,16 @@
       "concept_name": "公共池塘资源自主治理",
       "source": "llm",
       "file": "2026-11-07-17-公共池塘资源自主治理.md"
+    },
+    {
+      "time": "2026-11-08T17:30:22+08:00",
+      "concept_id": "garbage-can",
+      "concept_name": "垃圾桶模型",
+      "source": "llm",
+      "file": "2026-11-08-17-垃圾桶模型.md"
     }
   ],
   "slot_done": {
-    "2026-10-31": [
-      "1200"
-    ],
     "2026-11-01": [
       "1200"
     ],
@@ -414,6 +419,9 @@
       "1200"
     ],
     "2026-11-07": [
+      "1200"
+    ],
+    "2026-11-08": [
       "1200"
     ]
   }
