@@ -48,9 +48,10 @@
     "policy-window",
     "public-choice",
     "commons-governance",
-    "garbage-can"
+    "garbage-can",
+    "social-capital"
   ],
-  "last_used_id": "garbage-can",
+  "last_used_id": "social-capital",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -397,12 +398,16 @@
       "concept_name": "垃圾桶模型",
       "source": "llm",
       "file": "2026-11-08-17-垃圾桶模型.md"
+    },
+    {
+      "time": "2026-11-09T14:30:24+08:00",
+      "concept_id": "social-capital",
+      "concept_name": "社会资本",
+      "source": "llm",
+      "file": "2026-11-09-14-社会资本.md"
     }
   ],
   "slot_done": {
-    "2026-11-01": [
-      "1200"
-    ],
     "2026-11-02": [
       "1200"
     ],
@@ -422,6 +427,9 @@
       "1200"
     ],
     "2026-11-08": [
+      "1200"
+    ],
+    "2026-11-09": [
       "1200"
     ]
   }
