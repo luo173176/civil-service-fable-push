@@ -49,9 +49,10 @@
     "public-choice",
     "commons-governance",
     "garbage-can",
-    "social-capital"
+    "social-capital",
+    "new-public-management"
   ],
-  "last_used_id": "social-capital",
+  "last_used_id": "new-public-management",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -405,12 +406,16 @@
       "concept_name": "社会资本",
       "source": "llm",
       "file": "2026-11-09-14-社会资本.md"
+    },
+    {
+      "time": "2026-11-10T15:46:16+08:00",
+      "concept_id": "new-public-management",
+      "concept_name": "新公共管理",
+      "source": "llm",
+      "file": "2026-11-10-15-新公共管理.md"
     }
   ],
   "slot_done": {
-    "2026-11-02": [
-      "1200"
-    ],
     "2026-11-03": [
       "1200"
     ],
@@ -430,6 +435,9 @@
       "1200"
     ],
     "2026-11-09": [
+      "1200"
+    ],
+    "2026-11-10": [
       "1200"
     ]
   }
