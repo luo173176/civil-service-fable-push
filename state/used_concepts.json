@@ -50,9 +50,10 @@
     "commons-governance",
     "garbage-can",
     "social-capital",
-    "new-public-management"
+    "new-public-management",
+    "holistic-governance"
   ],
-  "last_used_id": "new-public-management",
+  "last_used_id": "holistic-governance",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -413,12 +414,16 @@
       "concept_name": "新公共管理",
       "source": "llm",
       "file": "2026-11-10-15-新公共管理.md"
+    },
+    {
+      "time": "2026-11-11T16:26:57+08:00",
+      "concept_id": "holistic-governance",
+      "concept_name": "整体性治理",
+      "source": "llm",
+      "file": "2026-11-11-16-整体性治理.md"
     }
   ],
   "slot_done": {
-    "2026-11-03": [
-      "1200"
-    ],
     "2026-11-04": [
       "1200"
     ],
@@ -438,6 +443,9 @@
       "1200"
     ],
     "2026-11-10": [
+      "1200"
+    ],
+    "2026-11-11": [
       "1200"
     ]
   }
