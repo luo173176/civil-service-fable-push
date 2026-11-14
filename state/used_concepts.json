@@ -53,9 +53,10 @@
     "new-public-management",
     "holistic-governance",
     "free-rider",
-    "broken-windows"
+    "broken-windows",
+    "goal-displacement"
   ],
-  "last_used_id": "broken-windows",
+  "last_used_id": "goal-displacement",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -437,12 +438,16 @@
       "concept_name": "破窗效应",
       "source": "llm",
       "file": "2026-11-13-15-破窗效应.md"
+    },
+    {
+      "time": "2026-11-14T16:41:25+08:00",
+      "concept_id": "goal-displacement",
+      "concept_name": "目标置换",
+      "source": "llm",
+      "file": "2026-11-14-16-目标置换.md"
     }
   ],
   "slot_done": {
-    "2026-11-06": [
-      "1200"
-    ],
     "2026-11-07": [
       "1200"
     ],
@@ -462,6 +467,9 @@
       "1200"
     ],
     "2026-11-13": [
+      "1200"
+    ],
+    "2026-11-14": [
       "1200"
     ]
   }
