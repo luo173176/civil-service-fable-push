@@ -54,9 +54,10 @@
     "holistic-governance",
     "free-rider",
     "broken-windows",
-    "goal-displacement"
+    "goal-displacement",
+    "peter-principle"
   ],
-  "last_used_id": "goal-displacement",
+  "last_used_id": "peter-principle",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -445,12 +446,16 @@
       "concept_name": "目标置换",
       "source": "llm",
       "file": "2026-11-14-16-目标置换.md"
+    },
+    {
+      "time": "2026-11-15T13:11:14+08:00",
+      "concept_id": "peter-principle",
+      "concept_name": "彼得原理",
+      "source": "llm",
+      "file": "2026-11-15-13-彼得原理.md"
     }
   ],
   "slot_done": {
-    "2026-11-07": [
-      "1200"
-    ],
     "2026-11-08": [
       "1200"
     ],
@@ -470,6 +475,9 @@
       "1200"
     ],
     "2026-11-14": [
+      "1200"
+    ],
+    "2026-11-15": [
       "1200"
     ]
   }
