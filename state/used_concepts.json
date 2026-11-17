@@ -56,9 +56,10 @@
     "broken-windows",
     "goal-displacement",
     "peter-principle",
-    "collective-action-logic"
+    "collective-action-logic",
+    "median-voter"
   ],
-  "last_used_id": "collective-action-logic",
+  "last_used_id": "median-voter",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -461,12 +462,16 @@
       "concept_name": "集体行动的逻辑",
       "source": "llm",
       "file": "2026-11-16-18-集体行动的逻辑.md"
+    },
+    {
+      "time": "2026-11-17T20:20:54+08:00",
+      "concept_id": "median-voter",
+      "concept_name": "中间选民定理",
+      "source": "llm",
+      "file": "2026-11-17-20-中间选民定理.md"
     }
   ],
   "slot_done": {
-    "2026-11-09": [
-      "1200"
-    ],
     "2026-11-10": [
       "1200"
     ],
@@ -486,6 +491,9 @@
       "1200"
     ],
     "2026-11-16": [
+      "1200"
+    ],
+    "2026-11-17": [
       "1200"
     ]
   }
