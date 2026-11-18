@@ -57,9 +57,10 @@
     "goal-displacement",
     "peter-principle",
     "collective-action-logic",
-    "median-voter"
+    "median-voter",
+    "nimby"
   ],
-  "last_used_id": "median-voter",
+  "last_used_id": "nimby",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -469,12 +470,16 @@
       "concept_name": "中间选民定理",
       "source": "llm",
       "file": "2026-11-17-20-中间选民定理.md"
+    },
+    {
+      "time": "2026-11-18T19:21:26+08:00",
+      "concept_id": "nimby",
+      "concept_name": "邻避效应",
+      "source": "llm",
+      "file": "2026-11-18-19-邻避效应.md"
     }
   ],
   "slot_done": {
-    "2026-11-10": [
-      "1200"
-    ],
     "2026-11-11": [
       "1200"
     ],
@@ -494,6 +499,9 @@
       "1200"
     ],
     "2026-11-17": [
+      "1200"
+    ],
+    "2026-11-18": [
       "1200"
     ]
   }
