@@ -58,9 +58,10 @@
     "peter-principle",
     "collective-action-logic",
     "median-voter",
-    "nimby"
+    "nimby",
+    "repeated-game"
   ],
-  "last_used_id": "nimby",
+  "last_used_id": "repeated-game",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -477,12 +478,16 @@
       "concept_name": "邻避效应",
       "source": "llm",
       "file": "2026-11-18-19-邻避效应.md"
+    },
+    {
+      "time": "2026-11-19T17:14:45+08:00",
+      "concept_id": "repeated-game",
+      "concept_name": "重复博弈与声誉机制",
+      "source": "llm",
+      "file": "2026-11-19-17-重复博弈与声誉机制.md"
     }
   ],
   "slot_done": {
-    "2026-11-11": [
-      "1200"
-    ],
     "2026-11-12": [
       "1200"
     ],
@@ -502,6 +507,9 @@
       "1200"
     ],
     "2026-11-18": [
+      "1200"
+    ],
+    "2026-11-19": [
       "1200"
     ]
   }
