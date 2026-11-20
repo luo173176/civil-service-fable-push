@@ -59,9 +59,10 @@
     "collective-action-logic",
     "median-voter",
     "nimby",
-    "repeated-game"
+    "repeated-game",
+    "tragedy-of-commons"
   ],
-  "last_used_id": "repeated-game",
+  "last_used_id": "tragedy-of-commons",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -485,12 +486,16 @@
       "concept_name": "重复博弈与声誉机制",
       "source": "llm",
       "file": "2026-11-19-17-重复博弈与声誉机制.md"
+    },
+    {
+      "time": "2026-11-20T16:08:40+08:00",
+      "concept_id": "tragedy-of-commons",
+      "concept_name": "公地悲剧",
+      "source": "llm",
+      "file": "2026-11-20-16-公地悲剧.md"
     }
   ],
   "slot_done": {
-    "2026-11-12": [
-      "1200"
-    ],
     "2026-11-13": [
       "1200"
     ],
@@ -510,6 +515,9 @@
       "1200"
     ],
     "2026-11-19": [
+      "1200"
+    ],
+    "2026-11-20": [
       "1200"
     ]
   }
