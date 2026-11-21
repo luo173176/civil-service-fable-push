@@ -60,9 +60,10 @@
     "median-voter",
     "nimby",
     "repeated-game",
-    "tragedy-of-commons"
+    "tragedy-of-commons",
+    "street-level-bureaucracy"
   ],
-  "last_used_id": "tragedy-of-commons",
+  "last_used_id": "street-level-bureaucracy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -493,12 +494,16 @@
       "concept_name": "公地悲剧",
       "source": "llm",
       "file": "2026-11-20-16-公地悲剧.md"
+    },
+    {
+      "time": "2026-11-21T20:27:00+08:00",
+      "concept_id": "street-level-bureaucracy",
+      "concept_name": "街头官僚",
+      "source": "llm",
+      "file": "2026-11-21-20-街头官僚.md"
     }
   ],
   "slot_done": {
-    "2026-11-13": [
-      "1200"
-    ],
     "2026-11-14": [
       "1200"
     ],
@@ -518,6 +523,9 @@
       "1200"
     ],
     "2026-11-20": [
+      "1200"
+    ],
+    "2026-11-21": [
       "1200"
     ]
   }
