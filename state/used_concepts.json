@@ -61,9 +61,10 @@
     "nimby",
     "repeated-game",
     "tragedy-of-commons",
-    "street-level-bureaucracy"
+    "street-level-bureaucracy",
+    "pressure-system"
   ],
-  "last_used_id": "street-level-bureaucracy",
+  "last_used_id": "pressure-system",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -501,12 +502,16 @@
       "concept_name": "街头官僚",
       "source": "llm",
       "file": "2026-11-21-20-街头官僚.md"
+    },
+    {
+      "time": "2026-11-22T13:47:17+08:00",
+      "concept_id": "pressure-system",
+      "concept_name": "压力型体制",
+      "source": "llm",
+      "file": "2026-11-22-13-压力型体制.md"
     }
   ],
   "slot_done": {
-    "2026-11-14": [
-      "1200"
-    ],
     "2026-11-15": [
       "1200"
     ],
@@ -526,6 +531,9 @@
       "1200"
     ],
     "2026-11-21": [
+      "1200"
+    ],
+    "2026-11-22": [
       "1200"
     ]
   }
