@@ -63,9 +63,10 @@
     "tragedy-of-commons",
     "street-level-bureaucracy",
     "pressure-system",
-    "weber-bureaucracy"
+    "weber-bureaucracy",
+    "representative-bureaucracy"
   ],
-  "last_used_id": "weber-bureaucracy",
+  "last_used_id": "representative-bureaucracy",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -517,12 +518,16 @@
       "concept_name": "韦伯科层制",
       "source": "llm",
       "file": "2026-11-23-17-韦伯科层制.md"
+    },
+    {
+      "time": "2026-11-24T13:27:31+08:00",
+      "concept_id": "representative-bureaucracy",
+      "concept_name": "代表性官僚制",
+      "source": "llm",
+      "file": "2026-11-24-13-代表性官僚制.md"
     }
   ],
   "slot_done": {
-    "2026-11-16": [
-      "1200"
-    ],
     "2026-11-17": [
       "1200"
     ],
@@ -542,6 +547,9 @@
       "1200"
     ],
     "2026-11-23": [
+      "1200"
+    ],
+    "2026-11-24": [
       "1200"
     ]
   }
