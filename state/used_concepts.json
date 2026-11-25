@@ -64,9 +64,10 @@
     "street-level-bureaucracy",
     "pressure-system",
     "weber-bureaucracy",
-    "representative-bureaucracy"
+    "representative-bureaucracy",
+    "policy-implementation-gap"
   ],
-  "last_used_id": "representative-bureaucracy",
+  "last_used_id": "policy-implementation-gap",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -525,12 +526,16 @@
       "concept_name": "代表性官僚制",
       "source": "llm",
       "file": "2026-11-24-13-代表性官僚制.md"
+    },
+    {
+      "time": "2026-11-25T17:37:49+08:00",
+      "concept_id": "policy-implementation-gap",
+      "concept_name": "政策执行偏差",
+      "source": "llm",
+      "file": "2026-11-25-17-政策执行偏差.md"
     }
   ],
   "slot_done": {
-    "2026-11-17": [
-      "1200"
-    ],
     "2026-11-18": [
       "1200"
     ],
@@ -550,6 +555,9 @@
       "1200"
     ],
     "2026-11-24": [
+      "1200"
+    ],
+    "2026-11-25": [
       "1200"
     ]
   }
