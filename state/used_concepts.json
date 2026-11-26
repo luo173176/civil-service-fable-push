@@ -65,9 +65,10 @@
     "pressure-system",
     "weber-bureaucracy",
     "representative-bureaucracy",
-    "policy-implementation-gap"
+    "policy-implementation-gap",
+    "bureaucratic-dysfunction"
   ],
-  "last_used_id": "policy-implementation-gap",
+  "last_used_id": "bureaucratic-dysfunction",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -533,12 +534,16 @@
       "concept_name": "政策执行偏差",
       "source": "llm",
       "file": "2026-11-25-17-政策执行偏差.md"
+    },
+    {
+      "time": "2026-11-26T19:25:07+08:00",
+      "concept_id": "bureaucratic-dysfunction",
+      "concept_name": "科层制反功能",
+      "source": "llm",
+      "file": "2026-11-26-19-科层制反功能.md"
     }
   ],
   "slot_done": {
-    "2026-11-18": [
-      "1200"
-    ],
     "2026-11-19": [
       "1200"
     ],
@@ -558,6 +563,9 @@
       "1200"
     ],
     "2026-11-25": [
+      "1200"
+    ],
+    "2026-11-26": [
       "1200"
     ]
   }
