@@ -66,9 +66,10 @@
     "weber-bureaucracy",
     "representative-bureaucracy",
     "policy-implementation-gap",
-    "bureaucratic-dysfunction"
+    "bureaucratic-dysfunction",
+    "due-process"
   ],
-  "last_used_id": "bureaucratic-dysfunction",
+  "last_used_id": "due-process",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -541,12 +542,16 @@
       "concept_name": "科层制反功能",
       "source": "llm",
       "file": "2026-11-26-19-科层制反功能.md"
+    },
+    {
+      "time": "2026-11-27T20:21:24+08:00",
+      "concept_id": "due-process",
+      "concept_name": "正当程序原则",
+      "source": "llm",
+      "file": "2026-11-27-20-正当程序原则.md"
     }
   ],
   "slot_done": {
-    "2026-11-19": [
-      "1200"
-    ],
     "2026-11-20": [
       "1200"
     ],
@@ -566,6 +571,9 @@
       "1200"
     ],
     "2026-11-26": [
+      "1200"
+    ],
+    "2026-11-27": [
       "1200"
     ]
   }
