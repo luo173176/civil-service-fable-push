@@ -1,75 +1,8 @@
 {
   "used_ids": [
-    "arrow-impossibility",
-    "natural-monopoly",
-    "path-dependence",
-    "confirmation-bias",
-    "loss-aversion",
-    "evidence-based-policy",
-    "social-loafing",
-    "bounded-rationality",
-    "nudging",
-    "punctuated-equilibrium",
-    "niskanen-model",
-    "nash-equilibrium",
-    "proportionality",
-    "tacitus-trap",
-    "multi-streams",
-    "collaborative-governance",
-    "adverse-selection",
-    "public-value-failure",
-    "public-goods",
-    "discretionary-power",
-    "externality",
-    "advocacy-coalition",
-    "rent-seeking",
-    "voting-paradox",
-    "principal-agent",
-    "matthew-effect",
-    "occams-razor",
-    "administrative-burden",
-    "policy-termination",
-    "survivorship-bias",
-    "moral-hazard",
-    "meta-governance",
-    "regulatory-capture",
-    "iron-law-of-oligarchy",
-    "policy-diffusion",
-    "new-public-service",
-    "algorithmic-bureaucracy",
-    "information-asymmetry",
-    "incrementalism",
-    "policy-feedback",
-    "giddens-paradox",
-    "parkinson-law",
-    "prisoners-dilemma",
-    "diffusion-of-responsibility",
-    "sunk-cost-fallacy",
-    "policy-window",
-    "public-choice",
-    "commons-governance",
-    "garbage-can",
-    "social-capital",
-    "new-public-management",
-    "holistic-governance",
-    "free-rider",
-    "broken-windows",
-    "goal-displacement",
-    "peter-principle",
-    "collective-action-logic",
-    "median-voter",
-    "nimby",
-    "repeated-game",
-    "tragedy-of-commons",
-    "street-level-bureaucracy",
-    "pressure-system",
-    "weber-bureaucracy",
-    "representative-bureaucracy",
-    "policy-implementation-gap",
-    "bureaucratic-dysfunction",
-    "due-process"
+    "public-goods"
   ],
-  "last_used_id": "due-process",
+  "last_used_id": "public-goods",
   "pregen_used": [
     "阿罗不可能定理.md"
   ],
@@ -549,12 +482,16 @@
       "concept_name": "正当程序原则",
       "source": "llm",
       "file": "2026-11-27-20-正当程序原则.md"
+    },
+    {
+      "time": "2026-11-28T20:25:21+08:00",
+      "concept_id": "public-goods",
+      "concept_name": "公共物品",
+      "source": "llm",
+      "file": "2026-11-28-20-公共物品.md"
     }
   ],
   "slot_done": {
-    "2026-11-20": [
-      "1200"
-    ],
     "2026-11-21": [
       "1200"
     ],
@@ -574,6 +511,9 @@
       "1200"
     ],
     "2026-11-27": [
+      "1200"
+    ],
+    "2026-11-28": [
       "1200"
     ]
   }
